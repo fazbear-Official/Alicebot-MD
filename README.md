@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/fazbear-Official/uploads/main/uploads/upload-1774396175445.jpg" width="200" style="border-radius: 50%"/>
 
-# ˚꒰🩸꒱ ፝͜⁞A͢ʟɪᴄᴇ-ʙᴏᴛ✰⃔⃝🕷
+# ALICE BOT
 
 > بوت واتساب متكامل مبني بـ Node.js و Baileys
 
