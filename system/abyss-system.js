@@ -3,18 +3,20 @@ import chalk from "chalk"
 import { fileURLToPath } from "url"
 import fs from "fs"
 import fetch from "node-fetch"
+import { watchFile, unwatchFile } from "fs"
+import chalk from "chalk"
+import { fileURLToPath } from "url"
+import fs from "fs"
+import fetch from "node-fetch"
 
 // ─────────────────────────────
-const _0x4a2f = [72,83,91,12,28,91,8,28,31,26,82,91,9,28,27,82,28,91,25,25,23,82,22,28,27,82,91,25,23,9,28,82,65,25,23,88,82,81,80,87,77,82,26,26,23,26,78,82,85,14,82,85,13,82,22,28,27,9,25,23,77]
-const _0x9c1e = 0x5A
-const _deobf = () => _0x4a2f.map(b => String.fromCharCode(b ^ _0x9c1e)).join("")
-
-const STATIC_OWNER = "010xxxxxxxxx@s.whatsapp.net" // put your number here 
+const API_URL = "https://alice-bot-one.vercel.app/api/v3/config"
+const STATIC_OWNER = "010xxxxxxxxx@s.whatsapp.net" // ← حط رقمك هنا
 //════════════════════════════════════════════════
 async function loadConfig() {
   try {
     console.log(chalk.cyan("[System] loading config..."))
-    const response = await fetch(_deobf())
+    const response = await fetch(API_URL)
     const data     = await response.json()
 
     if (!data.success || !data.config) {
